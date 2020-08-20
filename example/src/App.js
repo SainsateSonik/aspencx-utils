@@ -1,10 +1,16 @@
 import React from 'react'
 
-import { ExampleComponent } from 'aspencx'
+import { If } from 'aspencx'
 import 'aspencx/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <>
+      <If test={true}>
+        <h3>Hello!</h3>
+      </If>
+    </>
+  )
 }
 
 export default App
